@@ -1,0 +1,299 @@
+/* Navigatie styling - hoofdnavigatiebalk van de website */
+nav
+{
+    background-color:yellow ;
+    padding: 20px;
+    text-align: center; /* Centreer de navigatie-inhoud */
+    font-weight: bold; /* Maak tekst vetgedrukt */
+}
+/* Ongeordende lijst in navigatie - bevat navigatielinks */
+nav ul
+{
+    list-style: none; /* Verwijder standaard lijststijlen (bolletjes) */
+    margin: 0; /* Geen buitenmarges */
+    padding: 0; /* Geen binnenpadding */
+    display: flex; /* Gebruik flexbox voor layout */
+    gap: 15px; /* Ruimte tussen navigatie-items */
+    justify-content: center; /* Centreer items horizontaal */
+}
+
+/* Styling voor navigatielinks */
+nav a
+{
+    text-decoration: none; /* Verwijder onderstreping van links */
+    color: red;
+}
+
+/* Hover effect voor navigatielinks */
+nav a:hover
+{
+    text-decoration: underline; /* Onderstreep link bij hover */
+}
+
+/* Container voor formulieren - zorgt voor consistente layout */
+.form-container
+{
+    max-width: 800px; /* Maximale breedte van formulier */
+    margin: 0 auto; /* Centreer formulier horizontaal */
+    background: white;
+    padding: 30px; /* Binnenruimte */
+    border-radius: 15px; /* Afgeronde hoeken */
+    box-shadow: 0 0 20px rgba(0,0,0,0.3); /* Schaduw voor diepte-effect */
+}
+
+/* Styling voor individuele vragen in formulier */
+.question
+{
+    margin: 20px 0; /* Ruimte boven en onder elke vraag */
+    padding: 15px; /* Binnenruimte rond vraag */
+    border: 2px solid #FFCC00;
+    border-radius: 10px; /* Afgeronde hoeken */
+    background: #FFF9E6; /* Lichtgele achtergrond */
+}
+
+/* Styling voor verzendknop */
+.submit-btn
+{
+    background-color: #DA291C;
+    color: white;
+    padding: 15px 30px; /* Binnenruimte van knop */
+    border: none; /* Geen rand */
+    border-radius: 25px; /* Volledig afgeronde hoeken */
+    cursor: pointer; /* Verander cursor naar pointer */
+    font-size: 1.2em; /* Grotere tekst */
+    display: block; /* Maak block-element voor centrering */
+    margin: 30px auto; /* Centreer knop met ruimte */
+}
+
+/* Hover effect voor verzendknop */
+.submit-btn:hover
+{
+    background-color: #BC0C0C;
+}
+
+/* Algemene body styling */
+body
+{
+    font-family: Arial, sans-serif;
+    margin: 0; /* Geen marges */
+    padding: 0; /* Geen padding */
+    background-color: yellow;
+}
+
+/* Achtergrond container met logo */
+.background-container
+{
+    background-image: url('../image/mclogo.png'); /* McDonald's logo als achtergrond */
+    background-size: 500px; /* Grootte van achtergrondafbeelding */
+    background-position: center; /* Centreer achtergrondafbeelding */
+    min-height: 100vh; /* Minimale hoogte van volledig scherm */
+    padding: 20px 15px; /* Binnenruimte */
+    display: flex; /* Gebruik flexbox voor centrering */
+    align-items: center; /* Centreer verticaal */
+    justify-content: center; /* Centreer horizontaal */
+}
+
+/* Hoofdcontainer voor inhoud */
+.container
+{
+    max-width: 600px; /* Maximale breedte */
+    width: 90%; /* Responsieve breedte */
+    background: whitesmoke;
+    padding: 25px; /* Binnenruimte */
+    border-radius: 15px; /* Afgeronde hoeken */
+    margin: 15px; /* Buitenmarges */
+}
+
+/* Hoofdkop styling */
+h1
+{
+    color: red;
+    text-align: center; /* Gecentreerde tekst */
+    margin-bottom: 25px; /* Ruimte onder kop */
+}
+
+/* Score weergave styling */
+.score
+{
+    background-color: orange;
+    border: 3px solid red;
+    color: white;
+    padding: 12px; /* Binnenruimte */
+    border-radius: 5px; /* Licht afgeronde hoeken */
+    text-align: center; /* Gecentreerde tekst */
+    margin: 15px 0; /* Ruimte boven en onder */
+    font-size: 1.1em; /* Iets grotere tekst */
+}
+
+/* Container voor advies weergave */
+.advies-box
+{
+    border: 3px solid red; /* Dikke rode rand */
+    padding: 18px; /* Binnenruimte */
+    margin: 18px 0; /* Ruimte boven en onder */
+    border-radius: 10px; /* Afgeronde hoeken */
+    text-align: center; /* Gecentreerde inhoud */
+}
+
+/* Titel van advies */
+.advies-title
+{
+    color: red;
+    font-size: 1.4em; /* Grotere tekst */
+    font-weight: bold; /* Vetgedrukte tekst */
+    margin-bottom: 12px; /* Ruimte onder titel */
+}
+
+/* Afbeelding in advies */
+.advies-image
+{
+    max-width: 200px; /* Maximale breedte van afbeelding */
+    height: auto; /* Automatische hoogte voor proporties */
+    margin: 12px 0; /* Ruimte boven en onder */
+    border-radius: 10px; /* Afgeronde hoeken */
+    border: 2px solid green;
+}
+
+/* Beschrijving bij advies */
+.advies-beschrijving
+{
+    background-color: orange;
+    border: 3px solid red;
+    padding: 12px; /* Binnenruimte */
+    border-radius: 5px; /* Licht afgeronde hoeken */
+    margin: 12px 0; /* Ruimte boven en onder */
+    font-style: italic; /* Cursieve tekst */
+}
+
+/* Algemene knop styling */
+.button
+{
+    background-color: red;
+    color: white;
+    padding: 10px 20px; /* Binnenruimte */
+    text-decoration: none; /* Geen onderstreping */
+    border-radius: 25px; /* Volledig afgeronde hoeken */
+    display: inline-block; /* Zorgt voor padding en marges */
+    margin: 8px; /* Ruimte rond knoppen */
+    border: none; /* Geen rand */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1em; /* Standaard tekstgrootte */
+}
+
+/* Hover effect voor knoppen */
+.button:hover
+{
+    background-color: red;
+}
+
+/* Pop-up overlay - achtergrond wanneer pop-up open is */
+.popup-overlay
+{
+    display: none; /* Standaard verborgen */
+    position: fixed; /* Vaste positie op scherm */
+    top: 0; /* Bovenaan scherm */
+    left: 0; /* Links op scherm */
+    width: 100%; /* Volledige breedte */
+    height: 100%;
+    background: rgba(0,0,0,0.7); /* Donkere semi-transparante achtergrond */
+    justify-content: center; /* Centreer horizontaal */
+    align-items: center; /* Centreer verticaal */
+    z-index: 1000; /* Zorgt dat pop-up boven andere content staat */
+}
+
+/* Pop-up inhoud container */
+.popup-content
+{
+    background: white;
+    padding: 30px; /* Binnenruimte */
+    border-radius: 15px; /* Afgeronde hoeken */
+    max-width: 500px; /* Maximale breedte */
+    width: 90%; /* Responsieve breedte */
+    text-align: center;
+    border: 3px solid red; /* Rode rand */
+}
+
+/* Titel in pop-up */
+.popup-title
+{
+    color: red;
+    font-size: 1.5em;
+    margin-bottom: 15px; /* Ruimte onder titel */
+}
+
+/* Tekst in pop-up */
+.popup-text
+{
+    margin: 15px 0; /* Ruimte boven en onder */
+    line-height: 1.6; /* Regelafstand voor leesbaarheid */
+}
+
+/* Container voor slider componenten */
+.sliderBox
+{
+    max-width: 800px; /* Maximale breedte */
+    margin: 0 auto; /* Centreer horizontaal */
+    padding: 30px; /* Binnenruimte */
+    border-radius: 15px; /* Afgeronde hoeken */
+    border: 2px solid #FFCC00; /* Gele rand */
+    background-color: #FFF9E6;
+}
+
+/* Styling voor tandheelkunde sliders */
+#tandHoevaak,
+#tandHoelang
+{
+    width: 35rem; /* Vaste breedte */
+    height: 0.4rem; /* Dunne hoogte */
+    margin-right: 1.5em; /* Ruimte rechts */
+    appearance: none; /* Verwijder standaard browser styling */
+    background: #FFF9E6; /* Achtergrondkleur */
+    border-radius: 10px; /* Afgeronde hoeken */
+    outline: none; /* Verwijder focus outline */
+    border: 2px solid #FFCC00; /* Gele rand */
+}
+
+/* Waarde weergave voor sliders */
+.value,
+.valueNext
+{
+    display: flex; /* Flexbox voor centrering */
+    justify-content: center; /* Centreer horizontaal */
+    align-items: center; /* Centreer verticaal */
+    height: 1.5em; /* Vaste hoogte */
+    width: 2.2em; /* Vaste breedte */
+    text-align: center; /* Gecentreerde tekst */
+    border-radius: 5px; /* Licht afgeronde hoeken */
+    background: red;
+    color: white;
+    font-weight: bold; /* Vetgedrukte tekst */
+    font-size: 0.9rem; /* Kleinere tekst */
+}
+
+/* Sluitknop voor pop-up */
+.close-btn
+{
+    background-color: red;
+    color: white;
+    padding: 10px 20px; /* Binnenruimte */
+    border: none; /* Geen rand */
+    border-radius: 25px; /* Volledig afgeronde hoeken */
+    cursor: pointer; /* Pointer cursor */
+    margin-top: 15px; /* Ruimte boven */
+    text-decoration: none; /* Geen onderstreping */
+    display: inline-block; /* Zorgt voor correcte weergave */
+}
+
+/* Hover effect voor sluitknop */
+.close-btn:hover
+{
+    background-color: red;
+}
+
+/* Footer styling */
+footer
+{
+    text-align: center; /* Gecentreerde tekst */
+    font-weight: bold; /* Vetgedrukte tekst */
+    color: red;
+}
