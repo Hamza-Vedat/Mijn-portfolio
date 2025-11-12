@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- 
+Auteur: Hamza Oraloglu
+Aanmaakdatum: 16-05-2025
+<hobby pagina>
+-->
+
+<html lang="nl">
+<head>
+    <meta charset="UTF-8"> <!-- Tekenset declaratie: zorgt dat speciale tekens goed worden weergegeven -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Zorgt voor responsief design op mobiele apparaten -->
+    <title>Hamza Oraloglu</title> 
+    <link rel="stylesheet" href="../styles/stylesheet.css"> <!-- Hoofd CSS-bestand voor algemene styling -->
+    <link rel="stylesheet" href="../styles/stylesheet2.css"> <!-- Extra CSS-bestand voor aanvullende styling -->
+    <script src="../script/script.js" defer></script> <!-- JavaScript-bestand voor interactieve elementen -->
+</head>
+
+<body class="pagina_hobbys"> <!-- Body met specifieke klasse voor hobby pagina -->
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <img src="../logo/Hamza.jpg" alt="Hamza Oraloglu Logo" id="logo"> <!-- Logo met link naar home -->
+                    </a>
+                </li>
+                <li><a href="../index.html">Home</a></li> 
+                <li><a href="portfolio.html">Portfolio</a></li> 
+                <li><a href="hobbys.html" class="active">Hobby's</a></li> <!-- Actieve pagina gemarkeerd -->
+                <li><a href="vaardigheden.html">Vaardigheden</a></li> 
+                <li><a href="ervaring.html">Ervaring</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
+            </ul>
+        </nav>
+        <hr> <!-- Horizontale lijn onder navigatie -->
+    </header>
+
+    <!-- Mobiele header met menu knop -->
+    <div class="mobile-header">
+        <button id="menu-toggle">☰</button> <!-- Knop om mobiel menu te openen -->
+    </div>
+
+    <!-- Mobiel menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="menu-header">
+            <button id="menu-close">✕</button> <!-- Knop om mobiel menu te sluiten -->
+        </div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pagina/portfolio.html">Portfolio</a></li>
+            <li><a href="../pagina/vaardigheden.html">Vaardigheden</a></li>
+            <li><a href="../pagina/ervaring.html">Ervaring</a></li>
+            <li><a href="../pagina/contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Titel en korte uitleg -->
+        <section>
+            <h1>Hobby's</h1> 
+
+            <p>
+                Op deze pagina deel ik mijn persoonlijke interesses en hobby's buiten het programmeren om. 
+                Deze activiteiten helpen mij ontspannen en nieuwe energie te krijgen voor mijn studie en werk.
+            </p>
+        </section>
+
+        <!-- Hobby kaarten container -->
+        <section class="hobby-container"> <!-- Container voor hobbykaarten -->
+
+            <!-- Muziek luisteren hobby -->
+            <div class="hobby-wrapper">
+                <div class="hobby-card">
+                    <div class="hobby-info">
+                        <h3>Muziek luisteren</h3>
+                    </div>
+                    <div class="hobby-image">
+                        <img src="../image/icons8-listening.png" alt="muziekluisteren"> <!-- Afbeelding van muziek luisteren -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sporten hobby -->
+            <div class="hobby-wrapper">
+                <div class="hobby-card">
+                    <div class="hobby-info">
+                        <h3>Sporten</h3>
+                    </div>
+                    <div class="sports-icons">
+                        <img src="../image/icons8-basketball.png" alt="basketball"> <!-- Basketbal pictogram -->
+                        <img src="../image/icons8-football.png" alt="football"> <!-- Voetbal pictogram -->
+                        <img src="../image/volleyball.png" alt="volleyball"> <!-- Volleybal pictogram -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fotografie hobby -->
+            <div class="hobby-wrapper">
+                <div class="hobby-card">
+                    <div class="hobby-info">
+                        <h3>Fotografie</h3>
+                    </div>
+                    <div class="hobby-image">
+                        <img src="../image/photography.png" alt="Fotografie"> <!-- Afbeelding van fotografie -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reizen hobby -->
+            <div class="hobby-wrapper">
+                <div class="hobby-card">
+                    <div class="hobby-info">
+                        <h3>Reizen</h3>
+                    </div>
+                    <div class="hobby-image">
+                        <img src="../image/travel.png" alt="Reizen"> <!-- Afbeelding van reizen -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- VOETTEKST -->
+    <footer>
+        <hr>
+        &copy; Hamza Oraloglu – hamza.oraloglu@edu-kw1c.nl – 2025
+        <hr>
+    </footer>
+</body>
+</html>
+

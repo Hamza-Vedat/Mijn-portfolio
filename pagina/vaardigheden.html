@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- 
+Auteur: Hamza Oraloglu
+Aanmaakdatum: 16-05-2025
+<vaardigheden pagina>
+-->
+
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Oraloglu</title>
+    <!-- CSS bestanden koppelen -->
+    <link rel="stylesheet" href="../styles/stylesheet.css">
+    <link rel="stylesheet" href="../styles/stylesheet2.css">
+    <!-- JavaScript bestand laden -->
+    <script src="../script/script.js" defer></script>
+</head>
+
+<body class="pagina_vaardigheden">
+
+    <!-- HEADER: kop van de pagina met navigatie -->
+    <header>
+        <nav>
+            <ul>
+                <!-- Logo en link naar homepage -->
+                <li><a href="../index.html"><img src="../logo/Hamza.jpg" alt="Hamza Oraloglu Logo" id="logo"></a></li>
+                <!-- Navigatielinks -->
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="hobbys.html">Hobby's</a></li>
+                <li><a href="vaardigheden.html" class="active">Vaardigheden</a></li> 
+                <li><a href="ervaring.html">Ervaring</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr> <!-- Visuele scheiding -->
+    </header>
+
+    <!-- Mobiele header met menu-knop -->
+    <div class="mobile-header">
+        <!-- Knop om het mobiele menu te openen -->
+        <button id="menu-toggle">☰</button>
+    </div>
+
+    <!-- Mobiel menu dat verschijnt op kleine schermen -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="menu-header">
+            <!-- Knop om het mobiele menu te sluiten -->
+            <button id="menu-close">✕</button>
+        </div>
+        <!-- Navigatielinks binnen mobiel menu -->
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pagina/portfolio.html">Portfolio</a></li>
+            <li><a href="../pagina/vaardigheden.html">Vaardigheden</a></li>
+            <li><a href="../pagina/ervaring.html">Ervaring</a></li>
+            <li><a href="../pagina/contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- MAIN: belangrijkste inhoud van de pagina -->
+    <main>
+        <!-- SECTION: introductie met titel en uitleg -->
+        <section>
+            <h1>Mijn Vaardigheden</h1> 
+
+            <p>
+                Op deze pagina leest u over de technische en persoonlijke vaardigheden die ik heb ontwikkeld tijdens mijn opleiding 
+                Software Development. Deze vaardigheden helpen mij bij het maken van duidelijke, functionele en gebruiksvriendelijke 
+                websites. Zowel de technische kant (zoals HTML, CSS en JavaScript) als de manier van werken (zoals plannen en samenwerken) 
+                zijn belangrijk voor mijn ontwikkeling als softwareontwikkelaar.
+            </p>
+        </section>
+
+        <!-- SECTION: container voor de vaardigheden -->
+        <section class="skills-container">
+
+            <!-- ARTICLE: kolom voor technische vaardigheden -->
+            <article class="skills-column">
+                <h2>Technische Vaardigheden</h2>
+
+                <!-- DIV: grid voor skill-items -->
+                <div class="skills-grid">
+                    <!-- DIV: individuele skill met titel en icoon -->
+                    <div class="skill-item">
+                        <h3>HTML</h3>
+                        <img src="../image/html-5_5968267.png" alt="HTML logo">
+                    </div>
+                    <div class="skill-item">
+                        <h3>CSS</h3>
+                        <img src="../image/css-3_5968242.png" alt="CSS logo">
+                    </div>
+                    <div class="skill-item">
+                        <h3>JavaScript</h3>
+                        <img src="../image/js_5968292.png" alt="JavaScript logo">
+                    </div>
+                    <div class="skill-item">
+                        <h3>Figma</h3>
+                        <img src="../image/icons8-figma-48.png" alt="Figma logo">
+                    </div>
+                    <div class="skill-item">
+                        <h3>Photoshop</h3>
+                        <img src="../image/photoshop_5968520.png" alt="Photoshop logo">
+                    </div>
+                    <div class="skill-item">
+                        <h3>Premiere Pro</h3>
+                        <img src="../image/premiere_5611084.png" alt="Premiere Pro logo">
+                    </div>
+                </div>
+            </article>
+
+            <!-- ARTICLE: kolom voor persoonlijke vaardigheden -->
+            <article class="skills-column">
+                <h2>Persoonlijke Vaardigheden</h2>
+
+                <!-- DIV: grid met persoonlijke skill-items -->
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h3>Leergierig</h3>
+                        <img src="../image/leergierig.png" alt="Leergierig pictogram">
+                    </div>
+                    <div class="skill-item">
+                        <h3>Plannen & organiseren</h3>
+                        <img src="../image/plannen.png" alt="Plannen pictogram">
+                    </div>
+                    <div class="skill-item">
+                        <h3>Samenwerken</h3>
+                        <img src="../image/samenwerk.png" alt="Samenwerken pictogram">
+                    </div>
+                    <div class="skill-item">
+                        <h3>Zelfstandig werken</h3>
+                        <img src="../image/zelf.png" alt="Zelfstandig werken pictogram">
+                    </div>
+                    <div class="skill-item">
+                        <h3>Probleemoplossend</h3>
+                        <img src="../image/problemoplossing.png" alt="Probleemoplossend pictogram">
+                    </div>
+                    <div class="skill-item">
+                        <h3>Tijdmanagement</h3>
+                        <img src="../image/tijd.png" alt="Tijdmanagement pictogram">
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- FOOTER: onderaan de pagina -->
+    <footer>
+        <hr> <!-- Scheidingslijn -->
+        &copy; Hamza Oraloglu – hamza.oraloglu@edu-kw1c.nl – 2025 
+        <hr>
+    </footer>
+
+</body>
+</html>
