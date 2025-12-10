@@ -1,0 +1,318 @@
+/*Auteur: Hamza Oraloglu
+aanmaakdatum: 16-05-2025
+
+<stylesheet.css>*/
+
+/*  Algemene opmaak en lettertypes  */
+
+/* Roboto-lettertype toevoegen uit lokale map */
+@font-face 
+{
+  font-family: 'Roboto';
+  src: url(../font/Roboto/Roboto-VariableFont_wdth\,wght.ttf)
+}
+
+/* Montserrat-lettertype toevoegen uit lokale map */
+@font-face 
+{
+  font-family: 'Montserrat';
+  src: url(../font/Montserrat/Montserrat-VariableFont_wght.ttf)
+}
+
+/*Home Pagina*/
+
+html, body 
+{
+    height: 100%; /* Zorgt ervoor dat de html en body elementen de volledige hoogte van het venster innemen */
+    margin: 0; /* Verwijdert de standaardmarge rond de pagina */
+    padding: 0; /* Verwijdert de standaard padding binnen de body en html */
+    display: flex; /* Zet de body en html om in een flex-container */
+    flex-direction: column; /* Plaatst de flex-items (zoals main en footer) onder elkaar in een kolom */
+}
+
+/* Basisinstellingen voor het hele document */
+body 
+{
+  background-color: rgb(15, 23, 42); 
+  margin: 0; /* Verwijdert standaard marge van browser */
+  font-family: 'Roboto', sans-serif; 
+}
+
+/* Hoofdinhoud container met flexbox layout */
+.body 
+{
+  display: flex; /* Maakt een flex container aan */
+  justify-content: space-between; /* Verdeel items met ruimte ertussen */
+  padding: 40px; /* Binnenmarge rondom de inhoud */
+}
+
+/* ====== Header & Navigatie ====== */
+
+/* Navigatie lijststijl in de header */
+header ul 
+{
+  color: #38BDF8; 
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 26px; 
+  font-weight: bold; 
+  display: flex; /* Flexbox activeren */
+  justify-content: space-around; /* Gelijke ruimte rondom items */
+  align-items: center; /* Verticaal centreren */
+  list-style: none; /* Geen opsommingstekens */
+}
+
+/* Links in header en nav */
+header ul li a, nav a 
+{
+  text-decoration: none; 
+  color: rgb(56, 189, 248); 
+}
+
+/* Hover-effect op links */
+nav a:hover, header ul li a:hover 
+{
+  color: #34D399; 
+}
+
+/* ====== Logo ====== */
+
+#logo 
+{
+  width: 150px;
+  height: 150px; 
+}
+
+/* ====== Kolommen links en rechts ====== */
+
+/* Linkerkant van de layout */
+.left 
+{
+  position: relative; /* Element kan relatief worden gepositioneerd binnen zijn normale positie */
+  min-height: 200px; 
+  padding: 20px; /* Binnenruimte van 20 pixels rondom de inhoud */
+  text-align: left; /* Tekst wordt links uitgelijnd */
+  width: 40%; 
+}
+
+
+/* Titelstijl */
+h1,h2
+{
+  font-size: 24px; 
+  color: white;
+}
+
+/* Paragrafenstijl */
+p 
+{
+  color: rgb(100, 116, 139);
+  font-size: 20px; 
+  margin: 0 0 1em 0; /* Ondermarge */
+}
+
+/* Rechterkant van de layout */
+.right 
+{
+  width: 40%; /* 40% breedte */
+  margin-right: 150px; /* Rechtermarge */
+  text-align: right; /* Tekst rechts uitlijnen */
+}
+
+/* ====== Profielfoto ====== */
+
+/* Stijl voor profielfoto */
+.profiel 
+{
+  width: 300px;
+  height: 300px; 
+  object-fit: cover; /* Zorgt dat de afbeelding mooi past */
+  border-radius: 50%; /* Maakt het een cirkel */
+  border: 3px solid #38bdf8;
+}
+
+/* ====== Knoppen / Links ====== */
+
+/* Stijl voor actie-links */
+.tekst a 
+{
+  margin: 20px; /* Buitenmarge */
+  padding: 5px; /* Binnenmarge */
+  background-color: #38bdf8; 
+  color: rgb(15, 23, 42); 
+  border-radius: 10px; /* Afgeronde hoeken */
+  text-decoration: none; /* Geen onderlijning */
+  font-weight: bold; 
+  display: inline-block; /* Gedraagt zich als knop */
+}
+
+/* Hoverkleur voor knoppen */
+.tekst a:hover 
+{
+  background-color: #34d399;
+}
+
+/* ====== Mobiele header & menu ====== */
+
+/* Mobiele header-balk */
+.mobile-header 
+{
+  display: none; /* Standaard verborgen */
+  padding: 15px; /* Binnenmarge */
+  position: relative; /* Voor positionering kinderen */
+  background-color: rgb(15, 23, 42);
+  justify-content: space-between; /* Verdeel items */
+  align-items: center; /* Centreer verticaal */
+}
+
+/* Menu open/close knoppen */
+#menu-toggle, #menu-close 
+{
+  font-size: 24px;
+  background: none; 
+  border: none; /* Geen rand */
+  color: #38BDF8;
+  padding: 10px; /* Binnenmarge */
+  position: absolute; /* Absoluut gepositioneerd */
+  top: 20px; /* 20px vanaf de bovenkant */
+}
+
+#menu-toggle 
+{
+  left: 20px; /* Links gepositioneerd */
+}
+
+#menu-close 
+{
+  right: 20px; /* Rechts gepositioneerd */
+  color: white; 
+  font-size: 26px;
+}
+
+/* Profielfoto icoon mobiel */
+.mobile-profiel-icon 
+{
+  width: 40px;
+  height: 40px; 
+  object-fit: cover; /* Zorgt dat de afbeelding de container vult en bijgesneden wordt als nodig */
+  border-radius: 50%; 
+  border: 2px solid #38BDF8; 
+  position: absolute; /* Positioneert het icoon absoluut binnen de ouder */
+  right: 20px; 
+  top: 15px;
+}
+
+
+/* Mobiel menu overlay */
+.mobile-menu 
+{
+  display: none; /* Standaard verborgen, wordt alleen zichtbaar bij menu open */
+  position: fixed; /* Vast op het scherm, blijft op dezelfde plek bij scrollen */
+  width: 100vw; /* Vult de volledige breedte van het scherm */
+  height: 100vh; /* Vult de volledige hoogte van het scherm */
+  background-color: rgba(15, 23, 42);
+  flex-direction: column; /* Plaatst de inhoud onder elkaar (verticaal) */
+  justify-content: center; /* Centreert inhoud verticaal */
+  align-items: center; /* Centreert inhoud horizontaal */
+  z-index: 9999; /* Zorgt dat dit menu altijd bovenop andere elementen staat */
+}
+
+
+/* Lijst in mobiel menu */
+.mobile-menu ul 
+{
+  list-style: none; /* Geen bullets */
+  padding: 0;
+  text-align: center; /* Gecentreerde tekst */
+}
+
+.mobile-menu ul li 
+{
+  margin: 20px 0; /* Verticale marges */
+}
+
+/* Links in mobiel menu */
+.mobile-menu ul li a 
+{
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+}
+
+/* Hover voor mobiel menu */
+.mobile-menu ul li a:hover 
+{
+  color: #38BDF8;
+}
+
+/* Bovenbalk van mobiel menu */
+.menu-header 
+{
+  position: absolute; /* Plaatst de header exact op een vaste plek binnen de ouder */
+  top: 20px; /* Zet de header 20 pixels vanaf de bovenkant van de ouder */
+  width: 100%; /* Laat de header de volledige breedte van de ouder innemen */
+  padding: 0 20px; /* Voeg 20 pixels ruimte toe aan linker- en rechterkant binnen de header */
+  box-sizing: border-box; /* Inclusief padding en border in de totale breedte */
+  display: flex; /* Maak van de header een flex-container */
+  justify-content: space-between; /* Plaats de kinderen (bijv. naam en knop) aan de uitersten */
+  align-items: center; /* Verticaal centreren van de kinderen */
+}
+
+
+/* Naam in mobiel menu */
+.menu-name 
+{
+  color: #38bdf8;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ====== Footer ====== */
+
+/* Voettekst stijl */
+footer 
+{
+  color: rgb(100, 116, 139); /* Grijze tekstkleur */
+  text-align: center; /* Gecentreerde tekst */
+}
+
+/* ====== Responsief ontwerp voor schermen < 768px ====== */
+@media (max-width: 768px) 
+{
+  nav, header 
+  {
+    display: none; /* Verberg navigatie op mobiel */
+  }
+
+  .mobile-header 
+  {
+    display: flex; /* Toon mobiele header */
+  }
+
+  .body 
+  {
+    flex-direction: column; /* Zet kolommen onder elkaar */
+    padding: 20px; /* Binnenmarge */
+  }
+
+  .left, .right 
+  {
+    width: 100%; /* Volledige breedte gebruiken */
+    text-align: left;
+    margin: 0 20px;
+  }
+
+  .profiel 
+  {
+    display: none; /* Verberg profielfoto op mobiel */
+  }
+
+  .tekst a 
+  {
+    display: block; /* Knop op volledige breedte */
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+}

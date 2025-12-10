@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- 
+Auteur: Hamza Oraloglu
+Aanmaakdatum: 16-05-2025
+<contact pagina>
+-->
+
+<html lang="nl">
+<head>
+    <title>Hamza Oraloglu</title>
+    <!-- Tekenset declaratie -->
+    <meta charset="UTF-8">
+    <!-- Viewport declaratie (mobielvriendelijk maken) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS stilbestanden (stijl en opmaak) -->
+    <link rel="stylesheet" href="../styles/stylesheet.css">
+    <link rel="stylesheet" href="../styles/stylesheet2.css"> 
+    <!-- JavaScript bestand (voor mobiele navigatie) -->
+    <script src="../script/script.js" defer></script>
+</head>
+
+<body class="pagina_contact">
+
+    <!-- Navigatiebalk (desktop versie) -->
+    <header>
+        <nav>
+            <ul>
+                <!-- Logo dat teruggaat naar homepagina -->
+                <li>
+                    <a href="../index.html"><img src="../logo/Hamza.jpg" alt="Hamza Oraloglu Logo" id="logo"></a>
+                </li>
+                <!-- Navigatielinks -->
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="hobbys.html">Hobby's</a></li>
+                <li><a href="vaardigheden.html">Vaardigheden</a></li>
+                <li><a href="ervaring.html">Ervaring</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- Mobiele navigatieknop (hamburgermenu) -->
+    <div class="mobile-header">
+        <button id="menu-toggle">☰</button>
+    </div>
+
+    <!-- Mobiel menu (navigatie voor kleine schermen) -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="menu-header">
+            <button id="menu-close">✕</button>
+        </div>
+        <ul>
+            <!-- Mobiele navigatielinks -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="vaardigheden.html">Vaardigheden</a></li>
+            <li><a href="ervaring.html">Ervaring</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hoofdinhoud van de contactpagina -->
+    <main>
+
+        <!-- Introductietekst voor contact -->
+        <div>
+            <h1>Contact</h1>
+            <p>
+                Heeft u vragen of wilt u met mij in contact komen? Vul dan het onderstaande formulier in of 
+                stuur een e-mail. Ik reageer zo snel mogelijk.
+            </p>
+        </div>
+
+        <!-- Hoofdcontainer: 2 kolommen -->
+        <div class="contact-container">
+
+            <!-- Linker kolom: Contactgegevens -->
+            <div class="contact-wrapper">
+                <div class="contact-label"><h2>Contactgegevens</h2></div> 
+                <div class="contact-card">
+
+                    <!-- E-mailadres -->
+                    <div class="contact-info">
+                        <div class="icon-row">
+                            <img src="../image/mail.png" alt="Email" class="contact-icon">
+                            <span>hamza.vedatt@email.com</span><br><br>
+                        </div>
+                    </div>
+
+                    <!-- Telefoonnummer -->
+                    <div class="contact-info">
+                        <div class="icon-row">
+                            <img src="../image/phone_5989452.png" alt="Telefoon" class="contact-icon">
+                            <span>+31 6 49155416</span><br><br>
+                        </div>
+                    </div>
+
+                    <!-- Adres -->
+                    <div class="contact-info">
+                        <div class="icon-row">
+                            <img src="../image/mail.png" alt="Adres" class="contact-icon">
+                            <span>Robert Baeldestraat 7 Goirle 5051 KD</span><br><br>
+                        </div>
+                    </div>
+
+                    <!-- Sociale media iconen -->
+                    <div class="social-icons">
+                        <ul>
+                            <li>
+                                <a href="https://www.instagram.com/?locale=nl" target="_blank">
+                                    <img src="../image/instagram_2111463.png" alt="Instagram"><br><br>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/" target="_blank">
+                                    <img src="../image/github.png" alt="Github"><br><br>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/?mx=2" target="_blank">
+                                    <img src="../image/twitter.png" alt="X (Twitter)"><br><br>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rechter kolom: Contactformulier -->
+            <div class="contact-wrapper">
+                <div class="contact-label"><h2>Contactformulier</h2></div>
+                <div class="contact-card">
+
+                    <!-- Formulier dat gebruikers kunnen invullen -->
+                    <form class="contact-form" action="#" method="post">
+
+                        <!-- Naam invoerveld -->
+                        <div class="form-group">
+                            <label for="name">Naam</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <!-- E-mailadres invoerveld -->
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <!-- Berichttekstveld -->
+                        <div class="form-group">
+                            <label for="message">Bericht</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+
+                        <!-- Verstuurknop -->
+                        <button type="submit" class="submit-btn">Verstuur</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <!-- Iframe container -->
+            <div class="map-container">
+                <h2>Onze locatie</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.2048523094177!2d5.067850187573963!3d51.52780243655814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6bef9e80ccacb%3A0xb3e395ac08c05e26!2sRobert%20Baeldestraat%207%2C%205051%20KD%20Goirle!5e0!3m2!1str!2snl!4v1750231942189!5m2!1str!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </main>
+
+    <!-- Voettekst -->
+    <footer>
+        <hr>
+        &copy;Hamza Oraloglu hamza.oraloglu@edu-kw1c.nl 2025
+        <hr>
+    </footer>
+</body>
+</html>

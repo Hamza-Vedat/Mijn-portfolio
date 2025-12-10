@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- 
+Auteur: Hamza Oraloglu
+Aanmaakdatum: 16-05-2025
+<index.html>
+-->
+
+<html lang="nl">
+
+<head>
+    <title>Hamza Oraloglu </title> <!-- Titel van de pagina in het tabblad -->
+    <meta charset="UTF-8"> <!-- Tekencodering voor speciale tekens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsieve schaal op mobiel -->
+    <link rel="stylesheet" href="styles/stylesheet.css">  <!-- Eerste CSS-bestand -->
+    <link rel="stylesheet" href="styles/stylesheet2.css"> <!-- Tweede CSS-bestand (meestal mobiel of extra stijl) -->
+    <script src="script/script.js" defer></script> <!-- JavaScript-bestand, uitgevoerd na het laden van HTML -->
+</head>
+
+<body>
+
+    <!-- Navigatiebalk bovenaan -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <!-- Logo-afbeelding -->
+                    <img src="logo/Hamza.jpg" alt="Hamza Oraloglu Logo" id="logo">
+                </li>
+                <!-- Navigatielinks -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pagina/portfolio.html">Portfolio</a></li>
+                <li><a href="pagina/hobbys.html">Hobby's</a></li>
+                <li><a href="pagina/vaardigheden.html">Vaardigheden</a></li>
+                <li><a href="pagina/ervaring.html">Ervaring</a></li>
+                <li><a href="pagina/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr> <!-- Horizontale lijn onder de navigatie -->
+    </header>
+
+    <!-- Mobiele weergave header met knop en profielafbeelding -->
+    <div class="mobile-header">
+        <button id="menu-toggle">☰</button> <!-- Mobiele menuknop -->
+        <img src="image/profil.jpeg" alt="profielfoto" class="mobile-profiel-icon"> <!-- Profielafbeelding voor mobiel -->
+    </div>
+
+    <!-- Mobiel menu (zichtbaar bij klikken op knop) -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="menu-header">
+            <span class="menu-name">Hamza Oraloglu</span> <!-- Naam in mobiel menu -->
+            <button id="menu-close">✕</button> <!-- Sluitknop voor mobiel menu -->
+        </div>
+
+        <!-- Menu-items in mobiele weergave -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pagina/portfolio.html">Portfolio</a></li>
+            <li><a href="pagina/hobbys.html">Hobby's</a></li>
+            <li><a href="pagina/vaardigheden.html">Vaardigheden</a></li>
+            <li><a href="pagina/ervaring.html">Ervaring</a></li>
+            <li><a href="pagina/contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hoofdinhoud van de pagina -->
+    <main class="body">
+
+        <!-- Linker gedeelte met tekst en introductie -->
+        <section class="left">
+
+            <h1>
+                Welkom op mijn persoonlijke portfolio
+            </h1>
+
+            <p>
+                Mijn naam is Hamza Oraloglu. Ik ben een beginnende softwareontwikkelaar met een sterke interesse in webontwikkeling en technologie.
+                Deze website heb ik gebouwd als onderdeel van mijn opleiding, maar ook om te laten zien wie ik ben en wat ik kan. 
+                Ik heet u van harte welkom op mijn portfolio. Hier vindt u informatie over mijn opleidingen, werkervaring, vaardigheden en projecten. 
+                Ook vertel ik iets over mijn hobby's en persoonlijke kwaliteiten. Alles wat u op deze website ziet, heb ik zelf gemaakt met HTML, CSS en JavaScript.
+            </p>
+
+            <h2>
+                Over mij en mijn werkwijze
+            </h2>
+
+            <p>
+                Ik ben iemand die graag leert en werkt met technologie. Tijdens mijn opleiding heb ik veel geleerd over het bouwen van websites. 
+                Ik ben betrouwbaar, leergierig en kan goed zelfstandig werken. Mijn technische vaardigheden zijn belangrijk, 
+                maar ook communicatie en samenwerking vind ik belangrijk. 
+                Ik vind het leuk om problemen op te lossen en ik wil graag blijven groeien in dit vak. 
+                In de toekomst wil ik me graag verder ontwikkelen in softwareontwikkeling en webdesign.
+            </p>
+
+            <h2>
+                Wat kunt u hier vinden?
+            </h2>
+
+            <p>
+                Op deze site kunt u mijn projecten bekijken, mijn technische en persoonlijke vaardigheden lezen, 
+                en informatie vinden over mijn studie en (bij)banen. 
+                U kunt ook meer lezen over mijn interesses, zoals programmeren, design en technologie. 
+                Op de contactpagina kunt u mij bereiken als u vragen heeft of contact wilt opnemen. 
+                Deze website is bedoeld om mijzelf te presenteren aan stagebedrijven of toekomstige werkgevers. 
+                Ik hoop dat u een goed beeld krijgt van wie ik ben. Bedankt voor uw bezoek! 
+            </p>
+
+        </section>
+
+        <!-- Rechterzijde met profielfoto en links naar projecten/contact -->
+        <section class="right">
+            <img src="image/profil.jpeg" alt="profielfoto" class="profiel"> <!-- Grote profielfoto -->
+
+            <p>
+                <span class="tekst"><a href="pagina/portfolio.html">Bekijk Projecten</a></span> <!-- Link naar projectenpagina -->
+                <span class="tekst"><a href="pagina/contact.html">Contact</a></span> <!-- Link naar contactpagina -->
+            </p>
+        </section>
+        
+    </main>
+
+    <!-- Voettekst met contactgegevens -->
+    <footer>
+        <hr> <!-- Horizontale lijn boven de footer -->
+        &copy;Hamza Oraloglu hamza.oraloglu@edu-kw1c.nl 2025 <!-- Copyright & contact -->
+        <hr> <!-- Horizontale lijn onder de footer -->
+    </footer>
+
+</body>
+</html>

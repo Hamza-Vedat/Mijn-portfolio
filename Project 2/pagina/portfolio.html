@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- 
+Auteur: Hamza Oraloglu
+Aanmaakdatum: 16-05-2025
+<portfolio pagina>
+-->
+
+<html lang="nl">
+<head>
+    <meta charset="UTF-8"> <!-- Tekenset declaratie: zorgt dat speciale tekens goed worden weergegeven -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Zorgt dat de pagina zich aanpast aan het schermformaat -->
+    <title>Hamza Oraloglu</title> <!-- Titel van de pagina (wordt in de browser tab getoond) -->
+
+    <!-- CSS bestanden voor styling van de website -->
+    <link rel="stylesheet" href="../styles/stylesheet.css"> <!-- Hoofd stylesheet -->
+    <link rel="stylesheet" href="../styles/stylesheet2.css"> <!-- Extra stylesheet indien nodig -->
+
+    <!-- JavaScript bestand voor interactieve elementen zoals mobiel menu -->
+    <script src="../script/script.js" defer></script>
+</head>
+
+<body class="pagina_portfolio"> <!-- Body met een specifieke klasse voor portfolio styling -->
+
+    <!-- HEADER: bevat de kop van de pagina inclusief het navigatiemenu -->
+    <header>
+        <!-- NAV: navigatiebalk met links naar andere pagina's -->
+        <nav>
+            <ul>
+                <li>
+                    <!-- Logo en link naar homepage -->
+                    <a href="../index.html">
+                        <img src="../logo/Hamza.jpg" alt="Hamza Oraloglu Logo" id="logo">
+                    </a>
+                </li>
+                <!-- Navigatielinks -->
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li> <!-- Actieve link is gemarkeerd -->
+                <li><a href="hobbys.html">Hobby's</a></li>
+                <li><a href="vaardigheden.html">Vaardigheden</a></li>
+                <li><a href="ervaring.html">Ervaring</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <hr> <!-- Visuele scheiding onder navigatie -->
+    </header>
+
+    <!-- MOBIEL HEADER: knop voor het openen van het mobiele menu op kleine schermen -->
+    <div class="mobile-header">
+        <!-- Button om het mobiele menu te openen -->
+        <button id="menu-toggle">☰</button>
+    </div>
+
+    <!-- MOBIEL MENU: verborgen menu dat verschijnt op kleine schermen -->
+    <div id="mobile-menu" class="mobile-menu">
+        <!-- Kop van het mobiele menu met sluitknop -->
+        <div class="menu-header">
+            <!-- Button om het mobiele menu te sluiten -->
+            <button id="menu-close">✕</button>
+        </div>
+        <!-- Navigatielinks binnen het mobiele menu -->
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pagina/portfolio.html">Portfolio</a></li>
+            <li><a href="../pagina/vaardigheden.html">Vaardigheden</a></li>
+            <li><a href="../pagina/ervaring.html">Ervaring</a></li>
+            <li><a href="../pagina/contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- MAIN: bevat de belangrijkste inhoud van de pagina -->
+    <main>
+        <!-- Eerste SECTION: introductietekst over portfolio -->
+        <section>
+            <h1>Mijn Portfolio</h1> <!-- Hoofdtitel van de pagina -->
+
+            <p>Bekijk hieronder enkele projecten die ik heb gemaakt tijdens mijn opleiding.</p> <!-- Inleidende tekst -->
+        </section>
+
+        <!-- Tweede SECTION met projecten overzicht -->
+        <section class="projects-container"> <!-- Container voor alle projecten -->
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <!-- PROJECT WRAPPER: container voor afzonderlijk project -->
+
+                            <div class="project-wrapper">
+
+                                <!-- Label met projectnummer -->
+
+                                <div class="project-label">
+                                    <h2>
+                                        Project 1
+                                    </h2>
+                                </div>
+
+                                <!-- Projectkaart met info en afbeelding -->
+
+                                <div class="project-card">
+
+                                    <!-- Titel en beschrijving van het project -->
+
+                                    <div class="project-info">
+                                        <h3>
+                                            Safe Drive Rijschool Website
+                                        </h3> 
+                                    </div>
+
+                                    <!-- Afbeelding van het project -->
+
+                                    <div class="project-image">
+
+                                        <img src="../image/safe-drive.webp" alt="Safe Drive Rijschool Website">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+                        <td>
+                            <div class="project-wrapper">
+
+                                <div class="project-label">
+
+                                    <h2>
+                                        Project 2
+                                    </h2>
+                                </div>
+
+                                <div class="project-card">
+
+                                    <div class="project-info">
+                                        <h3>
+                                            TrendexGlobal Website
+                                        </h3>
+
+                                    </div>
+
+                                    <div class="project-image">
+                                        <img src="../image/Trendex-Global.webp" alt="TrendexGlobal Website">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </td>
+
+                        <td>
+                            <div class="project-wrapper">
+
+                                <div class="project-label">
+
+                                    <h2>
+                                        Project 3
+                                    </h2>
+                                </div>
+
+                                <div class="project-card">
+
+                                    <div class="project-info">
+
+                                        <h3>
+                                            Diverse HTML/CSS Projecten
+                                        </h3>
+                                    </div>
+
+                                    <div class="project-image">
+                                        <img src="../image/css-html.webp" alt="HTML/CSS Projecten">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+    </main>
+
+    <!-- FOOTER: bevat contactgegevens en jaar onderaan de pagina -->
+    <footer>
+        <hr> 
+        &copy; Hamza Oraloglu – hamza.oraloglu@edu-kw1c.nl – 2025 
+        <hr>
+    </footer>
+</body>
+</html>
