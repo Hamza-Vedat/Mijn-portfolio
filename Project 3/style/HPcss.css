@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8e1;
+}
+
+header {
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    padding: 36px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 15px 0 25px;
+}
+
+.test-button {
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.test-button:hover {
+    background-color: red;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.promo {
+    margin: 40px 0;
+}
+
+.promo img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+footer
+{
+    text-align: center;
+    background-color: red;
+}
+nav {
+    background: yellow;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: red;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+footer
+{
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    background-color: yellow;
+    padding: 20px;
+}
+
