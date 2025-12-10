@@ -1,0 +1,155 @@
+/*Auteur: Seth van der Linden, Hamza Oraloglu
+aanmaakdatum: 25-3-2025
+
+<style2css>
+
+/* Pagina Diensten */
+
+.font
+{
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* Pagina Pakketten */
+
+.pakketten
+{
+    text-align: center;
+}
+.les1:hover
+{
+color: yellow;
+}
+.les2:hover
+{
+color: yellow;
+}
+.les3:hover
+{
+color: yellow;
+}
+.les4:hover
+{
+color: yellow;
+}
+.les5:hover
+{
+color: yellow;
+}
+.les6:hover
+{
+color: yellow;
+}
+.les7:hover
+{
+color: yellow;
+}
+.les8:hover
+{
+color: yellow;
+}
+.les9:hover
+{
+color: yellow;
+}
+.les10:hover
+{
+color: yellow;
+}
+.les11:hover
+{
+color: yellow;
+}
+.les12:hover
+{
+color: yellow;
+}
+
+.pakketten
+{
+    text-align: center;
+}
+
+#grafiek_pakket
+{
+    width: 500px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Pagina Locaties */
+
+#pagina_locaties
+{
+display: block;
+
+}
+.location-container 
+{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    margin-top: 20px;
+}
+
+.location 
+{
+    text-align: center;
+}
+
+.location p 
+{
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.location-image 
+{
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+/* Pagina Over ons */
+
+#pagina_overons 
+{
+    background-image: url("../foto/cropped-safe-drive.png");
+    background-position: center;   
+}
+
+#pagina_overons h2
+{
+    text-align: center;
+    font-size: 30px; 
+}
+#car
+{
+    width: 300px;
+    height: auto;
+    margin: 10px;
+}
+
+#pagina_overons p
+{
+    font-size: 20px;
+}
+
+/* Pagina Contact */
+
+.pagina_contact .contact 
+{
+    width: 30px;
+}
+
+.pagina_contact iframe 
+{
+    width: 50%;
+    max-width: 500px;
+    height: 200px;
+    margin-top: 20px;
+}

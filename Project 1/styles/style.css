@@ -1,0 +1,127 @@
+/*Auteur: Seth van der Linden, Hamza Oraloglu
+aanmaakdatum: 25-3-2025
+
+<style.css>*/
+
+@font-face 
+{
+   font-family: "Roboto";
+   src:url(../font/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+body 
+{
+   background-color: whitesmoke;
+   font-family: "Roboto";
+}
+
+img 
+{
+   width: 200px;
+}
+
+li 
+{
+   display: inline;
+   width: 25%;
+   list-style-type: none;
+}
+
+/* Stijl voor navigatiebalk */
+
+nav ul 
+{
+   background-color: #5687cb;
+   display: flex;/*kunt u items flexibel uitlijnen en plaatsen in de container.*/
+   padding: 10px; /* opvulling- (border) stellen we de ruimte in tussen */
+   justify-content: center; /*horizontale as*/
+   align-items: center;    /*verticale as*/
+}
+
+nav a:hover 
+/*We veranderden de achtergrond van de tekst 
+wanneer we met de muis over de tekst gingen met behulp van de (hover) selector*/
+{
+   background-color: white;
+   width: 70px;
+}
+
+a 
+{
+   color: black;
+   text-decoration: none;  /*Het kan niet onderstreept worden.*/
+   font-weight: bold; /*Vetgedrukte tekst.*/
+}
+
+/* Media class voor icons */
+.media 
+{
+   width: 20px;
+   height: auto;
+}
+
+.video-center 
+{
+   width: 50%; 
+   height: auto; 
+   align-self: center; /*Hiermee kan de video op zijn as worden uitgelijnd (verticaal of horizontaal)*/
+}
+
+.box /*stijl van doos*/
+{
+   width: 300px;
+   padding: 20px;
+   margin: 20px; /*De marge bepaalt de ruimte tussen het element en andere elementen erbuiten.*/
+   background-color: #f2f2f2;
+   border: 2px solid #ccc; /*frame*/
+   border-radius: 10px; /*Afgeronde hoeken.*/
+}
+
+/*container */
+.container 
+{
+   display: flex; /*Deze eigenschap maakt van de .container een flex container.*/   
+   justify-content: space-between;/*Er wordt zoveel mogelijk ruimte tussen het eerste en het laatste element geplaatst en de elementen worden gelijkmatig over de elementen verdeeld.*/
+   align-items: flex-start; /*alle elementen uitlijnen met de bovenkant van hun container*/
+   gap: 20px; /*flex past de ruimte tussen items aan.*/
+}
+
+/* right box stil */
+.box-right 
+{
+   display: flex;
+   flex-direction: column;/*Hierdoor kunnen elementen verticaal (van boven naar beneden) worden gerangschikt*/
+}
+
+/* student comments stil */
+.student-comments 
+{
+   display: flex;/*kunt u items flexibel uitlijnen en plaatsen in de container.*/
+   justify-content: space-around;/*Regelt de horizontale uitlijning van elementen binnen de container*/
+   align-items: center; /*centreert de elementen verticaal binnen de container*/
+   width: 100%;
+   margin-top: 20px;/*bepaalt de ruimte bovenaan het element*/
+   border: 1px solid #ccc;
+   padding: 10px;
+   background-color: #f9f9f9;
+}
+
+.comment 
+{
+   width: 30%; 
+   padding: 10px;
+   text-align: center;
+   border: 1px solid #ddd;
+   background-color: #fff;
+   border-radius: 5px;
+}
+
+.comment img 
+{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   margin-bottom: 10px; /*bepaalt de ruimte onderaan een element*/
+}
+
+
