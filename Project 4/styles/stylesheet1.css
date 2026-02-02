@@ -1,0 +1,154 @@
+/* ===== ALGEMENE STIJLEN ===== */
+body
+{
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: rgb(15, 23, 42);
+    color: white;
+    margin: 0; /* Geen marges */
+    padding: 0; /* Geen padding */
+}
+
+/* ===== HEADER ===== */
+header
+{
+    background-color: rgb(15, 23, 42);
+    padding: 20px;   /* Ruimte binnenin de header */
+    text-align: center;
+    border-bottom: 2px solid rgb(56, 189, 248);
+}
+
+#logo
+{
+    width: 300px;
+    height: 150px;
+}
+
+/* ===== NAVIGATIE ===== */
+nav
+{
+    background-color: rgba(30, 41, 59);
+    padding: 20px;   /* Ruimte binnenin de navigatiebalk */
+    text-align: center;
+}
+
+nav ul
+{
+    list-style: none; /* Verwijder de opsommingstekens van de lijst */
+    display: flex; /* Flexbox layout voor horizontaal menu */
+    justify-content: center; /* Menu-items horizontaal centreren */
+    gap: 30px; /* Ruimte tussen menu-items */
+}
+
+nav ul li
+{
+    display: inline;
+}
+
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;  /* Ruimte rondom de linktekst */
+    border-radius: 5px;
+}
+
+nav ul li a:hover
+{
+    background-color: rgb(56, 189, 248); /* Blauw hover */
+    color: white;
+}
+
+/* ===== LOGIN FORM ===== */
+.container
+{
+    max-width: 500px;
+    margin: 0 auto; /* Automatische marges om te centreren */
+    padding: 40px; /* Ruimte rondom de container */
+}
+
+.login-section
+{
+    rgb(15, 23, 42)
+    border-radius: 15px;
+    padding: 40px;   /* Ruimte binnenin het loginblok */
+    border: 1px solid rgb(56, 189, 248);
+}
+
+.login-section h1
+{
+    text-align: center;
+    color: #FFD166;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;  /* Ruimte onder de titel */
+}
+
+.error-message
+{
+    background-color: darkred;
+    color: #FCA5A5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;  /* Ruimte onder de foutmelding */
+}
+
+.login-form
+{
+    display: flex; /* Flexbox voor formulierlayout */
+    flex-direction: column; /* Elementen onder elkaar */
+    gap: 20px; /* Ruimte tussen formulierelementen */
+}
+
+.form-group
+{
+    display: flex; /* Flexbox voor label en input */
+    flex-direction: column; /* Label boven input */
+}
+
+.form-group label
+{
+    color: white;
+    margin-bottom: 8px; /* Ruimte onder het label */
+    font-weight: bold;
+}
+
+.form-group input
+{
+    /* Ruimte binnenin het invoerveld */
+    border-radius: 8px;
+    border: 2px solid rgb(56, 189, 248);
+    color: black;
+    font-size: 16px;
+}
+
+.btn
+{
+    padding: 14px 30px; /* Ruimte binnenin de knop */
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}
+
+.login-btn
+{
+    background-color: #FFD166;
+    color: rgb(15, 23, 42);
+    font-size: 16px;
+}
+
+/* ===== FOOTER ===== */
+footer
+{
+    background-color: rgb(15, 23, 42);
+    padding: 30px 20px; /* Ruimte binnenin de footer */
+    text-align: center;
+    margin-top: 80px; /* Ruimte boven de footer */
+    border-top: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+footer p
+{
+    margin: 8px;  /* Kleine marges rondom de paragraaf */
+    font-weight: bold;
+    color: #FFD166;
+    font-size: 15px;
+}

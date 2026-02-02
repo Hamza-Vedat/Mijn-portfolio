@@ -1,0 +1,526 @@
+/* ===== ALGEMENE STIJLEN ===== */
+body
+{
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: rgb(15, 23, 42);
+    color: white;
+    margin: 0;   /* Buitenruimte rondom element */
+    padding: 0;  /* Binnenruimte binnen element */
+}
+
+/* ===== HEADER ===== */
+header
+{
+    background-color: rgb(15, 23, 42);
+    padding: 20px;  /* Binnenruimte */
+    text-align: center;
+    border-bottom: 2px solid rgb(56, 189, 248);
+}
+
+#logo
+{
+    width: 300px;
+    height: 150px;
+}
+
+/* ===== NAVIGATIE ===== */
+nav
+{
+    background-color: rgba(30, 41, 59, 0.95);
+    padding: 20px;  /* Binnenruimte */
+    text-align: center;
+}
+
+nav ul
+{
+    list-style: none;
+    display: flex;     /* Weergave-type  (horizontaal of verticaal) uitlijnt*/
+    justify-content: center;  /* Horizontale uitlijning */
+    gap: 30px;        /* Ruimte tussen items */
+}
+
+nav ul li
+{
+    display: inline;  /* List items side by side */
+}
+
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;   /* Binnenruimte */
+    border-radius: 5px;
+}
+
+nav ul li a:hover
+{
+    background-color: rgb(56, 189, 248); /* Blauw hover */
+    color: white;
+}
+
+/* ===== MAIN CONTENT ===== */
+main
+{
+    max-width: 1000px;
+    margin: 0 auto;  /* Marge voor centreren */
+    padding: 40px;   /* Binnenruimte */
+}
+
+/* ===== WELKOM SECTION ===== */
+.welcome-section
+{
+    text-align: center;
+    padding: 50px;
+    border-radius: 15px;   /* Binnenruimte */
+    margin-bottom: 60px;  /* Ruimte onderaan */
+    border: 1px solid rgba(56, 189, 248);
+}
+
+.welcome-section h2
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    color: #FFD166;
+    margin-bottom: 20px;  /* Ruimte onder de titel */
+}
+
+.welcome-section p
+{
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 30px;  /* Ruimte onder de tekst */
+    max-width: 600px;
+    margin-left: auto;    /* Automatische linkermarge */
+    margin-right: auto;   /* Automatische rechtermarge*/
+}
+
+.welcome-section a
+{
+    display: inline-block;  /* Weergegeven als blok-element maar in lijn */
+    background-color: #FFD166;
+    color: rgb(15, 23, 42);
+    padding: 14px 35px;     /* Ruimte rondom de tekst */
+    border-radius: 8px;
+    text-decoration: none;  /* Geen onderstreping */
+    font-weight: bold;
+    font-size: 16px;
+    border: none;          /* Geen rand */
+}
+/* ===== FILTER SECTION ===== */
+.filter-sectie
+{
+    background: rgba(15, 23, 42);
+    padding: 25px;    /* Ruimte binnenin de filtersectie */
+    border-radius: 15px;
+    border: 1px solid rgba(56, 189, 248);
+}
+
+.filter-sectie h3
+{
+    color: #FFD166;
+    margin-top: 0;   /* Geen ruimte boven de titel */
+    text-align: center;
+}
+
+.filter-container
+{
+    display: flex;   /* Flexbox voor horizontale layout */
+    gap: 15px;       /* Ruimte tussen elementen */
+    align-items: center;       /* Elementen verticaal gecentreerd */
+    justify-content: center;  /* Elementen horizontaal gecentreerd */
+}
+
+.filter-container select
+{
+    padding: 12px 20px;   /* Ruimte binnenin de dropdown */
+    background-color: rgb(15, 23, 42);
+    color: white;
+    border: 2px solid rgba(56, 189, 248);
+    border-radius: 8px;
+}
+
+.filter-container button
+{
+    padding: 12px 25px;   /* Ruimte binnenin de knop */
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.filter-container a
+{
+    padding: 12px 25px;    /* Ruimte binnenin de link */
+    background: grey;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ===== FILMS SECTION ===== */
+
+.featured-films h2
+{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    color: #FFD166; /* Geel */
+    margin-bottom: 40px;   /* Ruimte onder de titel */
+}
+
+/* ===== FILM CARDS ===== */
+.films-container
+{
+    display: flex;  /* Flexbox voor horizontale layout */
+    justify-content: center;  /* Kaarten horizontaal gecentreerd */
+    gap: 30px;      /* Ruimte tussen kaarten */
+    flex-wrap: wrap;  /* Kaarten kunnen naar volgende regel gaan */
+    margin-top: 40px; /* Ruimte boven de kaarten */
+}
+
+.film-card
+{
+    background-color: rgba(245, 245, 245, 0.95);
+    border-radius: 10px;
+    overflow: hidden;   /* Inhoud blijft binnen de kaart */
+    width: 300px;
+    display: flex;      /* Flexbox voor interne layout */
+    flex-direction: column;  /* Elementen onder elkaar */
+}
+
+.film-image
+{
+    width: 100%;
+    height: 350px;
+    border-bottom: 3px solid rgb(56, 189, 248);
+}
+
+.film-info
+{
+    padding: 20px; /* Ruimte binnenin de info-sectie */
+    flex: 1; /* Neemt beschikbare ruimte in beslag */
+    display: flex; /* Flexbox voor interne layout */
+    flex-direction: column; /* Elementen onder elkaar */
+}
+
+.film-card h3
+{
+    color: rgb(15, 23, 42);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.film-genre
+{
+    color: black;
+    font-size: 14px;
+}
+
+.film-description
+{
+    color: black;
+    font-size: 14px;
+}
+.film-release_date
+{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* ===== OVERZICHT PAGE ===== */
+.overzicht-header
+{
+    text-align: center;
+    background-color: rgb(15, 23, 42);
+    border-radius: 15px;
+    margin-bottom: 40px;   /* Ruimte onderaan */
+    border: 1px solid rgba(56, 189, 248);
+}
+
+.overzicht-header h1
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    color: #FFD166;
+    margin-bottom: 15px;    /* Ruimte onder de titel */
+}
+
+.welcome-text
+{
+    font-size: 18px;
+    color: white;
+}
+/* ===== bewerken verwijderen button ===== */
+.film-actions
+{
+    display: flex; /* Flexbox voor horizontale layout */
+    gap: 5px; /* Kleine ruimte tussen knoppen */
+}
+
+.bewerk-link, .verwijder-link
+{
+    padding: 6px;   /* Ruimte binnenin de knop */
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bewerk-link
+{
+    background-color: blue;
+    color: white;
+}
+
+.verwijder-link
+{
+    background-color: red;
+    color: white;
+}
+
+
+/* ===== FOOTER ===== */
+footer
+{
+    background-color: rgb(15, 23, 42);
+    padding: 30px 20px;  /* Ruimte binnenin de footer */
+    text-align: center;
+    margin-top: 80px;    /* Ruimte boven de footer */
+    border-top: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+footer p
+{
+    margin: 8px;  /* Kleine marges rondom tekst */
+    font-weight: bold;
+    color: #FFD166;
+    font-size: 15px;
+}
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px)  /* Voor tablets en kleinere laptops */
+{
+    .films-container
+    {
+        max-width: 800px;
+    }
+
+    .film-card
+    {
+        width: 250px;
+    }
+}
+/* Form Styling */
+.form-section
+{
+    max-width: 600px;
+    margin: 0 auto;   /* Automatisch gecentreerd */
+    background: rgba(30, 41, 59);
+    padding: 30px;    /* Ruimte binnenin het formulier */
+    border-radius: 10px;  /* Afgeronde hoeken */
+}
+
+.form-group
+{
+    margin-bottom: 20px;  /* Ruimte onder elke formuliergroep */
+}
+
+.form-group label
+{
+    display: block; /* Label als blok-element */
+    margin-bottom: 5px; /* Kleine ruimte onder het label */
+    color: #FFD166;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea
+{
+    width: 100%;
+    padding: 10px;   /* Ruimte binnenin het invoerveld */
+    border: 1px solid #555;
+    background: #1e293b;
+    color: white;
+    border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus
+{
+    border-color: #FFD166;
+}
+
+.form-actions
+{
+    text-align: center;
+    argin-top: 30px; /* Ruimte boven de actieknoppen */
+}
+
+.btn
+{
+    display: inline-block; /* Weergegeven als blok-element maar in lijn */
+    padding: 12px 30px; /* Ruimte binnenin de knop */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none; /* Geen onderstreping */
+}
+
+.btn-primary
+{
+    background: #007bff;
+    color: white;
+}
+
+.btn-primary:hover
+{
+    background: #0056b3;
+}
+
+.btn-secondary
+{
+    background: #6c757d;
+    color: white;
+    margin-left: 15px; /* Ruimte links van de knop */
+}
+
+.btn-secondary:hover
+{
+    background: #545b62;
+}
+
+-----------------------------
+/* ===== RESPONSIVE design ===== */
+@media screen and (max-width: 430px)
+{
+    /* ===== ALGEMEEN ===== */
+    body
+    {
+        font-size: 16px;
+    }
+
+    main
+    {
+        padding: 20px;  /* Minder padding op kleine schermen */
+    }
+
+    /* ===== HEADER ===== */
+    #logo
+    {
+        width: 200px;
+        height: auto;
+    }
+
+    header
+    {
+        padding: 15px;   /* Minder padding */
+    }
+
+    /* ===== NAVIGATIE ===== */
+    nav ul
+    {
+        flex-direction: column; /* Menu-items onder elkaar */
+        gap: 15px; /* Ruimte tussen menu-items */
+        padding: 0; /* Geen padding */
+    }
+
+    nav ul li a
+    {
+        display: block; /* Volledige breedte menu-items */
+        padding: 12px; /* Meer ruimte binnenin menu-items */
+    }
+
+    /* ===== WELCOME SECTION ===== */
+    .welcome-section
+    {
+        padding: 30px 20px;
+    }
+
+    .welcome-section h2
+    {
+        font-size: 22px;
+    }
+
+    .welcome-section p
+    {
+        font-size: 16px;
+    }
+
+    .welcome-section a
+    {
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+    }
+
+    /* ===== FILTER ===== */
+    .filter-container
+    {
+        flex-direction: column; /* Elementen onder elkaar */
+        gap: 12px; /* Ruimte tussen elementen */
+    }
+
+    .filter-container select,
+    .filter-container button,
+    .filter-container a
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ===== FILMS ===== */
+    .films-container
+    {
+        flex-direction: column; /* Filmkaarten onder elkaar */
+        gap: 25px; /* Ruimte tussen kaarten */
+    }
+
+    .film-card
+    {
+        width: 100%;
+    }
+
+    .film-image
+    {
+        height: 280px;
+        object-fit: cover; /* Afbeelding vult ruimte en behoudt verhoudingen */
+    }
+
+    .film-info h3
+    {
+        font-size: 18px;
+    }
+
+    /* ===== ACTIES ===== */
+    .film-actions
+    {
+        flex-direction: column; /* Knoppen onder elkaar */
+        gap: 10px; /* Ruimte tussen knoppen */
+    }
+
+    .bewerk-link,
+    .verwijder-link
+    {
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer
+    {
+        padding: 20px;
+    }
+
+    footer p
+    {
+        font-size: 14px;
+    }
+}
+
+
+
