@@ -1,0 +1,14 @@
+C:\Users\hveda\source\repos\T7_Praktijk\T7_Praktijk\bin\Debug\net10.0\T7_Praktijk.exe
+C:\Users\hveda\source\repos\T7_Praktijk\T7_Praktijk\bin\Debug\net10.0\T7_Praktijk.deps.json
+C:\Users\hveda\source\repos\T7_Praktijk\T7_Praktijk\bin\Debug\net10.0\T7_Praktijk.runtimeconfig.json
+C:\Users\hveda\source\repos\T7_Praktijk\T7_Praktijk\bin\Debug\net10.0\T7_Praktijk.dll
+C:\Users\hveda\source\repos\T7_Praktijk\T7_Praktijk\bin\Debug\net10.0\T7_Praktijk.pdb
+C:\Users\hveda\source\repos\T7_Praktijk\T7_Praktijk\obj\Debug\net10.0\T7_Praktijk.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hveda\source\repos\T7_Praktijk\T7_Praktijk\obj\Debug\net10.0\T7_Praktijk.AssemblyInfoInputs.cache
+C:\Users\hveda\source\repos\T7_Praktijk\T7_Praktijk\obj\Debug\net10.0\T7_Praktijk.AssemblyInfo.cs
+C:\Users\hveda\source\repos\T7_Praktijk\T7_Praktijk\obj\Debug\net10.0\T7_Praktijk.csproj.CoreCompileInputs.cache
+C:\Users\hveda\source\repos\T7_Praktijk\T7_Praktijk\obj\Debug\net10.0\T7_Praktijk.dll
+C:\Users\hveda\source\repos\T7_Praktijk\T7_Praktijk\obj\Debug\net10.0\refint\T7_Praktijk.dll
+C:\Users\hveda\source\repos\T7_Praktijk\T7_Praktijk\obj\Debug\net10.0\T7_Praktijk.pdb
+C:\Users\hveda\source\repos\T7_Praktijk\T7_Praktijk\obj\Debug\net10.0\T7_Praktijk.genruntimeconfig.cache
+C:\Users\hveda\source\repos\T7_Praktijk\T7_Praktijk\obj\Debug\net10.0\ref\T7_Praktijk.dll
