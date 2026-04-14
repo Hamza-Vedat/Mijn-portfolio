@@ -11,7 +11,7 @@ Ik ben een gemotiveerde **Software Developer student** aan het Koning Willem I C
 ## 🛠️ **Technische Vaardigheden**
 - **Frontend:** HTML, CSS, JavaScript, Responsive Design
 - **Backend:** PHP, MySQL, C#, Sessiebeheer, Authenticatie
-- **Tools:** Git, GitHub, Trello, PHPStorm, SQL Server Management, Visual Studio Code, Figma, Adobe Photoshop en Premiere
+- **Tools:** Git, GitHub, DevOps, Trello, PHPStorm, SQL Server Management, Visual Studio Code, Figma, Adobe Photoshop en Premiere
 
 ## 📫 **Contact**
 **Hamza Vedat **  
